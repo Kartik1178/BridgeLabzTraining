@@ -27,7 +27,7 @@ class Bird extends Animal {
     }
 }
 
-/* Entry point of the program */
+/* Entry point of the program. */
 class Main {
 
     // Program execution starts here
