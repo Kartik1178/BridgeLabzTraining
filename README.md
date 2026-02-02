@@ -1,18 +1,35 @@
-# 📘 Daily Project Logs – BridgeLabz Training
+# 📘 Daily Progress Log - BridgeLabz Training
 
-## 📅 January 2026
+- **12-Jan-2026 (Mon):** Installed Git, Gitflow and Eclipse IDE
 
-- **12-Jan-2026 (Mon):** Prerequisite Installation Guide for Git Bash, a Text Editor (Notepad++), Java, and GitHub setup
-- **13-Jan-2026 (Tue):** Completed Programming Elements Practices
+- **13-Jan-2026 (Tue):** Solved and completed question of Java Programming Elements (Level 1 & 2)
 
-- **15-Jan-2026 (Thu):** Completed Control Flow Practices (Level 1–3)
-- **16-Jan-2026 (Fri):** Completed Arrays Practices (Level 1 & 2)
-- **19-Jan-2026 (Mon):** Completed Java Methods Practices
+- **14-Jan-2026 (Wed):** Learned Array declaration, creation and initialization
 
-- **20-Jan-2026 (Tue):** Completed Java String Practices and EXTRAS – Java String Practice Problems
+- **15-Jan-2026 (Thu):** Solved and completed question of Java Control FLow (Level 1-3) 
 
-- **22-Jan-2026 (Thu):** Completed EXTRAS – Java String Handling and solved EXTRAS – Built-In Function Practice Problems
-- **23-Jan-2026 (Fri):** Studied Object-Oriented Programming Fundamentals and completed Java Class & Object assignment
+- **16-Jan-2026 (Fri):** Solved Java Array Problem Level 1 & 2 and learned about Var-Arg-Methods
 
-- **27-Jan-2026 (Mon):** Reconstructed the Git repository by reorganizing folder structure, cleaning unused files, and fixing commit inconsistencies
-- **28-Jan-2026 (Tue):** Installed and configured IntelliJ IDEA; imported pending repositories and verified execution of all Java programs including Java Constructors, Instance vs. Class Variables, Access Modifiers Level 1 Lab Practice
+- **17-Jan-2026 (Sat):** Solved Java Array Problem Level 3 and learned about 1D and 2D arrays
+
+- **19-Jan-2026 (Mon):** Solved Java Method Problem Level 1-3 and learned about operators
+
+- **20-Jan-2026 (Tue):** Solved String Problem Level 1 and learned about string, stringBuffer and string Builder
+
+- **21-Jan-2026 (Wed):** Solved String Problem Level 2 and revised everthing learned through bridgelabz
+
+- **22-Jan-2026 (Thu):** Solved String Problem Level 3 and learned about different Operators
+
+- **23-Jan-2026 (Fri):** Solved OOPS Level 1 and learned Flow Control concepts
+
+- **24-Jan-2026 (Sat):** Solved OOPS Level 2 and learned Java source file structure, Access Modifiers 
+
+- **27-Jan-2026 (Tue):** Studied OOPS concepts like Inheritance, Abstraction, Polymorphism and Encapsulation, data hiding, overloading and overriding
+
+- **28-Jan-2026 (Wed):** Solved Java Constructors Problems and learned about concepts of constructors and rebuild my GitHub Repo with right folder sctructure
+
+- **29-Jan-2026 (Thu):** Solved Java Keywords Problem and learned about this, static, final keyword and concepts of instanceof operator
+
+- **30-Jan-2026 (Fri):** Learned and practiced different types of UML diagrams such as class, along with understanding relationships like association, aggregation, and composition, and solved related
+
+- **31-Jan-2026 (Sat):** Learned about different types of inheritance like single,multilevel, hierarchical and hybrid inheritance and completed the inheritance assignment
