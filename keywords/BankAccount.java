@@ -35,10 +35,12 @@ public void getDetails(Object b){
 static int getTotalAccounts(){
 return accountsNumber;
 }
-
+//This is the main entry point for this program
 public static void main(String[] args){
+    //BankAccount object creation
     BankAccount b=new BankAccount(33,"ee");
     String a="ee";
+    //Calling method to get bank account details
     b.getDetails(a);
 
 }
