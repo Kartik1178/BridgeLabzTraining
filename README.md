@@ -34,3 +34,4 @@
 
 - **31-Jan-2026 (Sat):** Learned about different types of inheritance like single,multilevel, hierarchical and hybrid inheritance and completed the inheritance assignment
 - **2-Feb-2026 (Mon):** Practiced problems on inheritance,encapsulation,and interfaces.
+- **3-Feb-2026 (Tues):** Learnt the concepts of linked list in Java. Solved problems on the different types of linkedlist to understand the implementation .
