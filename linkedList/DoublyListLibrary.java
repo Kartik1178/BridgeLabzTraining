@@ -239,7 +239,7 @@ public class LibraryManagementSystem {
     }
 
     /*
-     * Main method for testing
+     *  Main method for testing the functionality
      */
     public static void main(String[] args) {
 

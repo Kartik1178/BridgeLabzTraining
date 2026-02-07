@@ -183,7 +183,7 @@ class RoundRobinScheduler {
         System.out.println("(back to head)");
     }
 
-    // Main method
+    // Main method for testing
     public static void main(String[] args) {
 
         RoundRobinScheduler scheduler = new RoundRobinScheduler(4);
