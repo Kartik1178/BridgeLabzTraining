@@ -1,189 +1,88 @@
-class MovieNode{
-String movieTitle;
-String director;
-int yearOfRelease;
-MovieNode next;
-MovieNode prev;
-MovieNode(String movieTitle,String director,int yearOfRelease){
-    this.movieTitle=movieTitle;
-    this.director=director;
-    this.yearOfRelease=yearOfRelease;
-    this.next=null;
-    this.prev=null;
-}
-void display(){
-    System.out.println("title: "+title);
-    System.out.println("director: "+director);
-    System.out.println("yearofRelease: "+yearofRelease);
-}
-}
-class MovieDoublyLinkedList{
-    private MovieNode head;
-    private MovieNode tail;
-    void addAtBeginning(String movieTitle,String director,int yearOfRelease){
-        MovieNode newNode=new MovieNode(movieTitle, director, yearOfRelease);
-        if(head==null){
-            head=tail=newNode;
-            return;
+/*
+ * Doubly Linked List node representing a Movie
+ */
+class MovieNode {
+    String title, director;
+    int year;
+    double rating;
+    MovieNode next, prev;
 
-        }
-newNode.next=head;
-        head.prev=newNode;
-        head=newNode;
+    MovieNode(String title, String director, int year, double rating) {
+        this.title = title;
+        this.director = director;
+        this.year = year;
+        this.rating = rating;
     }
-void addAtEnd(String movieTitle,String director,int yearOfRelease){
-        MovieNode newNode=new MovieNode(movieTitle, director, yearOfRelease);
-        if(tail==null){
-            head=tail=newNode;
+}
+
+/*
+ * Movie management using doubly linked list
+ */
+class MovieList {
+
+    private MovieNode head, tail;
+
+    // Add movie at end
+    void addMovie(String title, String director, int year, double rating) {
+        MovieNode node = new MovieNode(title, director, year, rating);
+        if (head == null) {
+            head = tail = node;
             return;
         }
-        tail.next=newNode;
-        newNode.prev=tail;
-        tail=newNode;
-
-}
-void addAtPosition(String movieTitle,String director,int yearOfRelease,int position){
-    if (position <= 0) {
-        System.out.println("Invalid position!");
-        return;
+        tail.next = node;
+        node.prev = tail;
+        tail = node;
     }
-        if(position==1){
-            addAtBeginning(movieTitle, director, yearOfRelease);
-       return;
-        }
-MovieNode temp=head;
- for(int i=0;i<position-1&&temp!=null;i++){
-temp=temp.next;
- }
- if(temp==null){
-     System.out.println("Out of bounds positon");
- return;
- }
- if(temp.next==null){
-     addAtEnd(movieTitle, director, yearOfRelease);
- return;
- }
-MovieNode newNode=new MovieNode(movieTitle, director, yearOfRelease);
-newNode.next=temp.next;
-newNode.prev=temp;
-temp.next.prev=newNode;
-temp.next=newNode;
 
-}
-public void removeTitle(String Title){
-        if(head==null){
-            return null;
-        }
-        MovieNode temp=head;
-        while(temp!=null){
-            if(temp.movieTitle.equals(Title)){
-                if(temp==head){
-                    head=head.next;
-                    return;
-                }
-            if(temp==tail){
-                tail=tail.prev;
-                return;
-            }
-            temp.prev.next=temp.next;
-            temp.next.prev=temp.prev
-            return;
-            }
-            temp=temp.next;
-
-        }
-System.out.println("Title not found");
-        return;
-
-}
-    public void searchByRating(double rating) {
+    // Remove by title
+    void removeMovie(String title) {
         MovieNode temp = head;
-        boolean found = false;
-
         while (temp != null) {
-            if (temp.rating == rating) {
-                temp.display();
-                found = true;
-            }
-            temp = temp.next;
-        }
-        if (!found) {
-            System.out.println("No movies found with rating: " + rating);
-        }
-    }
+            if (temp.title.equals(title)) {
+                if (temp.prev != null) temp.prev.next = temp.next;
+                else head = temp.next;
 
-    public void updateRating(String title, double newRating) {
-        MovieNode temp = head;
-
-        while (temp != null) {
-            if (temp.movieTitle().equalsIgnoreCase(title)) {
-                temp.rating(newRating);
-                System.out.println("Rating updated successfully.");
+                if (temp.next != null) temp.next.prev = temp.prev;
+                else tail = temp.prev;
                 return;
             }
             temp = temp.next;
         }
-        System.out.println("Movie not found!");
+    }
+
+    // Search by director
+    void searchByDirector(String director) {
+        MovieNode temp = head;
+        while (temp != null) {
+            if (temp.director.equals(director))
+                System.out.println(temp.title + " " + temp.rating);
+            temp = temp.next;
+        }
     }
 
     // Display forward
-    public void displayForward() {
-        if (head == null) {
-            System.out.println("No movies available.");
-            return;
-        }
-
+    void displayForward() {
         MovieNode temp = head;
         while (temp != null) {
-            temp.display();
+            System.out.println(temp.title + " " + temp.rating);
             temp = temp.next;
         }
     }
 
     // Display reverse
-    public void displayReverse() {
-        if (tail == null) {
-            System.out.println("No movies available.");
-            return;
-        }
-
+    void displayReverse() {
         MovieNode temp = tail;
         while (temp != null) {
-            temp.display();
+            System.out.println(temp.title + " " + temp.rating);
             temp = temp.prev;
         }
     }
-}
 
-public class MovieManagementSystem {
     public static void main(String[] args) {
-
-        MovieDoublyLinkedList movies = new MovieDoublyLinkedList();
-
-        movies.addAtBeginning("Inception", "Christopher Nolan", 2010, 8.8);
-        movies.addAtEnd("Interstellar", "Christopher Nolan", 2014, 8.6);
-        movies.addAtEnd("Avatar", "James Cameron", 2009, 7.8);
-        movies.addAtPosition(2, "Titanic", "James Cameron", 1997, 7.9);
-
-        System.out.println("\nMovies (Forward):");
-        movies.displayForward();
-
-        System.out.println("\nMovies (Reverse):");
-        movies.displayReverse();
-
-        System.out.println("\nSearch by Director (Christopher Nolan):");
-        movies.searchByDirector("Christopher Nolan");
-
-        System.out.println("\nSearch by Rating (7.8):");
-        movies.searchByRating(7.8);
-
-        System.out.println("\nUpdating rating for Avatar:");
-        movies.updateRating("Avatar", 8.2);
-
-        System.out.println("\nRemoving Titanic:");
-        movies.removeByTitle("Titanic");
-
-        System.out.println("\nFinal Movie List:");
-        movies.displayForward();
+        MovieList list = new MovieList();
+        list.addMovie("Inception", "Nolan", 2010, 9.0);
+        list.addMovie("Interstellar", "Nolan", 2014, 8.8);
+        list.displayForward();
+        list.displayReverse();
     }
 }

@@ -1,142 +1,107 @@
-class StudentNode{
-int RollNo;
-String Name;
-int Age;
- char Grade;
-StudentNode next;
-StudentNode(int RollNo,String Name,int Age,char Grade){
-    this.RollNo=RollNo;
-    this.Name=Name;
-    this.Age=Age;
-    this.Grade=Grade;
-    this.next=null;
+/*
+ * Singly Linked List based Student Record Management System
+ * Each node stores student details and a reference to the next node
+ */
+class StudentNode {
+    int roll;
+    String name;
+    int age;
+    char grade;
+    StudentNode next;
+
+    StudentNode(int roll, String name, int age, char grade) {
+        this.roll = roll;
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+        this.next = null;
+    }
 }
 
-}
-class StudentLinkedList {
+/*
+ * Manages student records using singly linked list
+ */
+class StudentList {
+
     private StudentNode head;
 
-    void insertNodeAtBeginning(int RollNo, String Name, int Age, char Grade) {
-        StudentNode newNode = new StudentNode(RollNo, Name, Age, Grade);
-        newNode.next = head;
-        head = newNode;
+    // Add at beginning
+    void addAtBeginning(int roll, String name, int age, char grade) {
+        StudentNode node = new StudentNode(roll, name, age, grade);
+        node.next = head;
+        head = node;
     }
 
-    void insertNodeAtEnd(int RollNo, String Name, int Age, char Grade) {
-        StudentNode newNode = new StudentNode(RollNo, Name, Age, Grade);
-        while (temp.next == null) {
-            temp = temp.next;
-        }
-        temp.next = newNode;
-    }
-
-    void addAtPosition(int RollNo, String Name, int Age, char Grade, int position) {
-        if (position == 0) {
-            insertNodeAtBeginning( int RollNo, String Name,int Age, char Grade);
-        }
-        StudentNode studentNode = new (RollNo, Name, Age, Grade)
-        temp = head;
-        for (int i = 0; i < position - 1 && temp != null; i++) {
-            temp = temp.next;
-        }
-        if (temp == null) {
-            System.out.println("Node out of error");
+    // Add at end
+    void addAtEnd(int roll, String name, int age, char grade) {
+        StudentNode node = new StudentNode(roll, name, age, grade);
+        if (head == null) {
+            head = node;
             return;
         }
-        newNode.next = temp.next;
-        temp.next = newNode;
-
+        StudentNode temp = head;
+        while (temp.next != null)
+            temp = temp.next;
+        temp.next = node;
     }
 
-    void deleteByRollNo(int RollNo) {
-        temp = head;
-        if (temp.RollNo == RollNo) {
+    // Delete by roll number
+    void deleteByRoll(int roll) {
+        if (head == null) return;
+
+        if (head.roll == roll) {
             head = head.next;
-            return
+            return;
         }
-        while (temp != null && temp.next != RollNo) {
+
+        StudentNode temp = head;
+        while (temp.next != null && temp.next.roll != roll)
             temp = temp.next;
-        }
-        if (temp == null) {
-            System.out.println("Node not found");
-            return
-        }
-        temp.next = temp.next.next;
-        return
+
+        if (temp.next != null)
+            temp.next = temp.next.next;
     }
 
-    void searchByRollNo(int rollNo) {
+    // Search student
+    void search(int roll) {
         StudentNode temp = head;
-
         while (temp != null) {
-            if (temp.rollNo == rollNo) {
-                System.out.println("Student Found:");
-                displayStudent(temp);
+            if (temp.roll == roll) {
+                System.out.println(temp.roll + " " + temp.name + " " + temp.age + " " + temp.grade);
                 return;
             }
             temp = temp.next;
         }
-        System.out.println("Student not found!");
+        System.out.println("Student not found");
     }
-     void updateGrade(int rollNo, char newGrade) {
-        StudentNode temp = head;
 
+    // Update grade
+    void updateGrade(int roll, char grade) {
+        StudentNode temp = head;
         while (temp != null) {
-            if (temp.rollNo == rollNo) {
-                temp.grade = newGrade;
-                System.out.println("Grade updated successfully.");
+            if (temp.roll == roll) {
+                temp.grade = grade;
                 return;
             }
             temp = temp.next;
         }
-        System.out.println("Student not found!");
-    }
-void displayStudents(){
-        if(head==null){
-            System.out.println("no students to display");
-            return
-        }
-        temp=head;
-        while(temp){
-           displayStudent(temp);
-           temp=temp.next;
-        }
-
-}
-    private void displayStudent(StudentNode student) {
-        System.out.println(
-                "Roll No: " + student.rollNo +
- ", Name: " + student.name + ", Age: " + student.age +
- ", Grade: " + student.grade
-        );
     }
 
-}
-public class StudentRecordManagement {
+    // Display all students
+    void display() {
+        StudentNode temp = head;
+        while (temp != null) {
+            System.out.println(temp.roll + " " + temp.name + " " + temp.age + " " + temp.grade);
+            temp = temp.next;
+        }
+    }
+
     public static void main(String[] args) {
-
-        StudentLinkedList list = new StudentLinkedList();
-
-        // Adding students
-        list.addAtBeginning(101, "Alice", 20, 'A');
-        list.addAtEnd(102, "Bob", 21, 'B');
-        list.addAtEnd(103, "Charlie", 19, 'C');
-        list.addAtPosition(2, 104, "David", 22, 'B');
-
-        System.out.println("\nAll Student Records:");
-        list.displayAll();
-
-        System.out.println("\nSearching Roll No 102:");
-        list.searchByRollNo(102);
-
-        System.out.println("\nUpdating grade for Roll No 103:");
-        list.updateGrade(103, 'A');
-
-        System.out.println("\nDeleting Roll No 101:");
-        list.deleteByRollNo(101);
-
-        System.out.println("\nFinal Student Records:");
-        list.displayAll();
+        StudentList list = new StudentList();
+        list.addAtBeginning(1, "Alice", 20, 'A');
+        list.addAtEnd(2, "Bob", 21, 'B');
+        list.display();
+        list.updateGrade(2, 'A');
+        list.search(2);
     }
 }
-
