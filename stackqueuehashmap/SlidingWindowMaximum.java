@@ -1,7 +1,9 @@
 import java.util.Deque;
 import java.util.ArrayDeque;
+/* implementing the sliding window maximum problem*/
 class SlidingWindowMaximum{
 
+    /* method for returning an array with the maximum numbers of each subarray*/
 static int[] maxSlidingWindow(int[] arr,int k){
 
 int n=arr.length;
