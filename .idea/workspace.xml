@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3034cd71-253f-4ddf-b6ee-fb4ecc83dcd8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/stackqueuehashmap/SlidingWindowMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/stackqueuehashmap/SlidingWindowMaximum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stackqueuehashmap/SortStackUsingRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/stackqueuehashmap/SortStackUsingRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,5 +108,16 @@
       <updated>1770023976439</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/linkedList/TaskScheduler.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
