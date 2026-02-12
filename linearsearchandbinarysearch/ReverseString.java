@@ -1,15 +1,23 @@
-class ReverseString{
-    static String reverseString(String s){
-        StringBuilder sb=new StringBuilder();
-        sb.append(s);
+/*
+ * Class Name: ReverseStringUsingStringBuilder
+ * This program reverses a given string using StringBuilder.
+ * It demonstrates efficient string manipulation using reverse().
+ */
+
+class ReverseStringUsingStringBuilder {
+
+    // Method to reverse a string using StringBuilder
+    public static String reverseString(String input) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(input);
         sb.reverse();
-        String reversed=sb.toString();
-        return reversed;
+        return sb.toString();
     }
-public static void main(String[] args){
-        System.out.println(reverseString("hello"));
-
-}
-
-
+// main method for testing
+    public static void main(String[] args) {
+        String input = "hello";
+        String reversed = reverseString(input);
+        System.out.println("Original: " + input);
+        System.out.println("Reversed: " + reversed);
+    }
 }
