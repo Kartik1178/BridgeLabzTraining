@@ -1,26 +1,23 @@
-import java.util.*
-class FindFrequency{
-    public static Map<String,Integer> findFrequency(List<String> list){
-        Map<String,Int> hashMap=new HashMap<>();
-        for(String item:list){
-            if(hashMap.containsKey(item)) {
-                hashMap.put(map.get(item) + 1);
-            }
-            else{
-                hashMap.put(item,1);
-            }
+import java.util.*;
+
+/*
+ * FrequencyCounter
+ * Counts frequency of each string element in a List using Map.
+ */
+public class FrequencyCounter {
+
+    // Method to count frequencies
+    public static Map<String, Integer> countFrequency(List<String> list) {
+        Map<String, Integer> map = new HashMap<>();
+
+        for (String str : list) {
+            map.put(str, map.getOrDefault(str, 0) + 1);
         }
-return hashMap;
-
-
+        return map;
     }
+
     public static void main(String[] args) {
-        List<String> input = Arrays.asList("apple", "banana", "apple", "orange");
-
-        Map<String, Integer> result = countFrequency(input);
-
-        System.out.println(result);
+        List<String> list = Arrays.asList("apple", "banana", "apple", "orange");
+        System.out.println(countFrequency(list));
     }
-
-
 }

@@ -1,22 +1,29 @@
-class RotateList{
-    static T void rotateList(List<T> list,int k) {
+import java.util.*;
+
+/*
+ * RotateList
+ * Rotates elements of a list by k positions.
+ */
+public class RotateList {
+
+    // Method to rotate list left by k positions
+    public static <T> List<T> rotate(List<T> list, int k) {
         int n = list.size();
         k = k % n;
-    reverseList(list,0,k-1);
-    reverseList(list,k,n-1);
-    reverseList(list,0,n-1);
-    }
-static <T> void reverseList(List<T> list,int start,int end){
-        T temp=list.get(start);
-        list.set(start,list.get(end));
-        list.set(end,temp);
-        start+=1;
-        end-=1;
-    }
-public static void main(String[] args){
-        List<Integer> list=new ArrayList<>(Arrays.asList(4,2,5,3434,5));
-        rotateList(list,3);
-        System.out.println(list);
-}
 
+        List<T> result = new ArrayList<>();
+
+        for (int i = k; i < n; i++) {
+            result.add(list.get(i));
+        }
+        for (int i = 0; i < k; i++) {
+            result.add(list.get(i));
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> list = Arrays.asList(10, 20, 30, 40, 50);
+        System.out.println(rotate(list, 2));
+    }
 }

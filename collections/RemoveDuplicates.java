@@ -1,21 +1,19 @@
-class RemoveDuplicate{
-    static <T> List<T>  removeDuplicates(List<T> list){
-        List<T> res=new ArrayList<>();
-        for(T item:list){
-            if(!res.contains(item)){
-                res.add(item);
-            }
+import java.util.*;
 
-        }
-        return res;
+/*
+ * RemoveDuplicates
+ * Removes duplicate elements from list while preserving insertion order.
+ */
+public class RemoveDuplicates {
+
+    // Method to remove duplicates
+    public static <T> List<T> removeDuplicates(List<T> list) {
+        Set<T> set = new LinkedHashSet<>(list);
+        return new ArrayList<>(set);
     }
 
     public static void main(String[] args) {
-        List<Integer> input = Arrays.asList(3, 1, 2, 2, 3, 4);
-        List<Integer> result = removeDuplicates(input);
-        System.out.println(result);
+        List<Integer> list = Arrays.asList(3, 1, 2, 2, 3, 4);
+        System.out.println(removeDuplicates(list));
     }
-
-
-
 }

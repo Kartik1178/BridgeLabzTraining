@@ -1,17 +1,20 @@
 import java.util.*;
 
+/*
+ * SetToSortedList
+ * Converts a HashSet of integers into a sorted List in ascending order.
+ */
 public class SetToSortedList {
 
-    public static List<Integer> convertToSortedList(Set<Integer> set) {
-        List<Integer> sortedList = new ArrayList<>(set); // convert set to list
-        Collections.sort(sortedList); // sort ascending
-        return sortedList;
+    // Method to convert set to sorted list
+    public static List<Integer> convertAndSort(Set<Integer> set) {
+        List<Integer> list = new ArrayList<>(set);
+        Collections.sort(list);
+        return list;
     }
 
     public static void main(String[] args) {
-        Set<Integer> set = new HashSet<>(Arrays.asList(5, 3, 9, 1));
-
-        List<Integer> result = convertToSortedList(set);
-        System.out.println(result); // Output: [1, 3, 5, 9]
+        Set<Integer> set = new HashSet<>(Arrays.asList(5,3,9,1));
+        System.out.println(convertAndSort(set));
     }
 }

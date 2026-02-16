@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3034cd71-253f-4ddf-b6ee-fb4ecc83dcd8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/CompareSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/CompareSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/ConvertSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/ConvertSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/FindNthElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/FindNthElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/FrequencyofElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/FrequencyofElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/InsurancePolicyManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/InsurancePolicyManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/QueueInterface/ReverseQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/RemoveDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/ReverseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/ReverseList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/RotateList.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/RotateList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/SymmetricDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/SymmetricDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/UnionAndIntersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/UnionAndIntersection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,24 +1,30 @@
-class UnionAndIntersection{
-    static <T> Set<T> findUnion(Set<T> set1, Set<T> set2){
-        Set<T> union=newHashSet<>(set1);
-        union.addAll(set2);
-        return union;
-    }
-static <T> Set<T> findInntersection(Set<T>set1,Set<T>set2){
-        Set<T> intersection=new HashSet<>(set1);
-        intersection.retainAll(set2);
-        return intersection;
+import java.util.*;
 
-}
+/*
+ * SetUnionIntersection
+ * Computes union and intersection of two sets.
+ */
+public class SetUnionIntersection {
+
+    // Method to compute union
+    public static <T> Set<T> union(Set<T> set1, Set<T> set2) {
+        Set<T> result = new HashSet<>(set1);
+        result.addAll(set2);
+        return result;
+    }
+
+    // Method to compute intersection
+    public static <T> Set<T> intersection(Set<T> set1, Set<T> set2) {
+        Set<T> result = new HashSet<>(set1);
+        result.retainAll(set2);
+        return result;
+    }
 
     public static void main(String[] args) {
-        Set<Integer> set1 = new HashSet<>(Arrays.asList(1, 2, 3));
-        Set<Integer> set2 = new HashSet<>(Arrays.asList(3, 4, 5));
-        Set<Integer> union = findUnion(set1, set2);
-        Set<Integer> intersection = findIntersection(set1, set2);
-        System.out.println("Union: " + union);
-        System.out.println("Intersection: " + intersection);
+        Set<Integer> set1 = new HashSet<>(Arrays.asList(1,2,3));
+        Set<Integer> set2 = new HashSet<>(Arrays.asList(3,4,5));
+
+        System.out.println("Union: " + union(set1, set2));
+        System.out.println("Intersection: " + intersection(set1, set2));
     }
-
-
 }
