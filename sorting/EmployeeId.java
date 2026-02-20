@@ -27,6 +27,7 @@ class EmployeeId{
         }
 
     }
+    //main method for testing
     public static void main(String[] args) {
         int[] arr = {4, 6, 42, 1, 3};
         insertionSort(arr);

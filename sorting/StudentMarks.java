@@ -29,7 +29,7 @@ class StudentMarks{
         }
 
     }
-    //Main method for testing the sorting algorithm
+    //Main method   for testing the sorting algorithm
     public static void main(String[] args){
         int[] arr={4,6,42,1,3};
         bubbleSort(arr);

@@ -50,7 +50,7 @@ class HeapSort{
             heapify(arr,n,largest);
         }
     }
-
+    //main method for testing
     public static void main(String[] args){
         int[] arr={50000,30000,70000,45000,60000};
         heapSort(arr);

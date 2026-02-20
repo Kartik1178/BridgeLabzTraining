@@ -37,7 +37,7 @@ class CountingSort{
             arr[i]=output[i];
         }
     }
-
+    //main method for testing
     public static void main(String[] args){
         int[] arr={12,15,10,18,14,12,11};
         countingSort(arr);

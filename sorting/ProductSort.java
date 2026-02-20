@@ -40,7 +40,7 @@ class QuickSort{
             arr[j]=temp;
         }
     }
-    //Main function for testing the sorting algorithm
+    //Main function   for testing the sorting algorithm
     public static void main(String[] args){
         int[] arr={5,3,6,3,5,1,3,7,7,3,52,4};
         quickSort(arr,0,arr.length-1);

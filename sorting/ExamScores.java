@@ -25,7 +25,7 @@ class SelectionSort{
             arr[minIndex]=temp;
         }
     }
-
+    //main method for testing
     public static void main(String[] args){
         int[] arr={78,45,90,66,55};
         selectionSort(arr);
