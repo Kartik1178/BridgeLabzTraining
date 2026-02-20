@@ -11,9 +11,8 @@ public class EmailSampleValidator {
     public static boolean validateEmail(String email) {
         String regex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$";
         return email != null && email.matches(regex);
-    }
-
-    public static void main(String[] args) {
+    //main method for testing
+        public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Valid email test cases from the document

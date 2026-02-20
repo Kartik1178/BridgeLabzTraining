@@ -12,7 +12,7 @@ public class PasswordRule3Validator {
         String regex = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
         return password != null && password.matches(regex);
     }
-
+    //main method for testing
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

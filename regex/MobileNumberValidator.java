@@ -12,7 +12,7 @@ public class MobileNumberValidator {
         String regex = "^[0-9]{1,3}\\s[0-9]{10}$";
         return mobile != null && mobile.matches(regex);
     }
-
+    //main method for testing
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
