@@ -42,7 +42,7 @@ public class SmartWarehouseSystem {
             System.out.println(item);
         }
     }
-// main method for testing
+// main method for  testing
     public static void main(String[] args) {
         Storage<Electronics> electronicsStorage = new Storage<>();
         electronicsStorage.addItem(new Electronics("Laptop"));
