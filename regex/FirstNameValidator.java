@@ -12,7 +12,7 @@ public class FirstNameValidator {
         String regex = "^[A-Z][a-z]{2,}$";
         return firstName != null && firstName.matches(regex);
     }
-    //main method for testing
+    //main method for  testing
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

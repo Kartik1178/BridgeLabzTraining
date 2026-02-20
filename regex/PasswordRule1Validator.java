@@ -12,7 +12,7 @@ public class PasswordRule1Validator {
         String regex = "^.{8,}$";
         return password != null && password.matches(regex);
     }
-    //main method for testing
+    //main method for  testing
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

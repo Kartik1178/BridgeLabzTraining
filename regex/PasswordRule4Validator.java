@@ -29,7 +29,7 @@ public class PasswordRule4Validator {
 
         return hasMinLength && hasUpperCase && hasDigit && specialCharCount == 1;
     }
-    //main method for testing
+    //main method for  testing
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
