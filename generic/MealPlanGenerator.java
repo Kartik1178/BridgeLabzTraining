@@ -32,7 +32,7 @@ public class MealPlanGenerator {
     public static <T extends MealPlan> void generateMealPlan(T meal) {
         System.out.println("Generated: " + meal.getMealType());
     }
-//main method for   testing
+//main method for  testing
     public static void main(String[] args) {
         Meal<VegetarianMeal> vegMeal = new Meal<>(new VegetarianMeal());
         generateMealPlan(vegMeal.getMeal());

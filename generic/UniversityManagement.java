@@ -38,7 +38,7 @@ public class UniversityCourseSystem {
             System.out.println(c);
         }
     }
-//main method for   testing
+//main method for  testing
     public static void main(String[] args) {
         List<CourseType> courses = Arrays.asList(
                 new ExamCourse("Math Exam"),

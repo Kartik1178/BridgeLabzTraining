@@ -46,7 +46,7 @@ public class ResumeScreeningSystem {
             System.out.println("Screening for role: " + role);
         }
     }
-//Main method for  testing
+//Main method for testing
     public static void main(String[] args) {
         Resume<SoftwareEngineer> r1 = new Resume<>("Alice", new SoftwareEngineer());
         Resume<DataScientist> r2 = new Resume<>("Bob", new DataScientist());
