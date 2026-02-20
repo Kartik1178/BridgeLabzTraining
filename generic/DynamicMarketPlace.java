@@ -30,7 +30,7 @@ public class OnlineMarketplace {
     public static <T extends Product<?>> void applyDiscount(T product, double percentage) {
         product.price -= product.price * (percentage / 100);
     }
-
+    //main method for testing
     public static void main(String[] args) {
         Product<BookCategory> book = new Product<>("Java Book", 500);
         applyDiscount(book, 10);
