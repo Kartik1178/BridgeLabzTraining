@@ -74,6 +74,7 @@ public void int get(int key){
             current=current.next;
         }
     }
+    //main method for testing
     public static void main(String[] args) {
 
         CustomHashMap map = new CustomHashMap();

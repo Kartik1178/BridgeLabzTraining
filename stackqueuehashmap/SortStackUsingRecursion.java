@@ -50,7 +50,7 @@ class SortStackUsingRecursion {
         // Push the removed element back
         stack.push(peek);
     }
-
+    //main method for testing
     public static void main(String[] args) {
 
         Stack<Integer> stack = new Stack<>();

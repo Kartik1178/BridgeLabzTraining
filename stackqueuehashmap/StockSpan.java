@@ -43,7 +43,7 @@ class StockSpan {
 
         return span;
     }
-// main method for testing the stock span calculator
+// main method for   testing the stock span calculator
     public static void main(String[] args) {
 
         int[] prices = {100, 80, 60, 70, 60, 75, 85};

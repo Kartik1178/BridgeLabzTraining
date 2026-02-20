@@ -45,7 +45,7 @@ class SubArraysWithZeroSum {
             map.get(sum).add(i);
         }
     }
-
+    //main method  for testing
     public static void main(String[] args) {
 
         int[] arr = {1, -1, 2, -2, 3, -3};

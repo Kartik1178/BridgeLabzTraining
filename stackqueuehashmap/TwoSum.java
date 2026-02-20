@@ -34,7 +34,7 @@ class TwoSum {
         // Return -1, -1 if no valid pair is found
         return new int[]{-1, -1};
     }
-// method for finding the two sum of an array
+// method for   finding the two sum of an array
     public static void main(String[] args) {
 
         int[] arr = {2, 7, 11, 15};

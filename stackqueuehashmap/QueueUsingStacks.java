@@ -48,7 +48,7 @@ class QueueUsingStack {
     boolean isEmpty() {
         return stackEnq.isEmpty() && stackDeq.isEmpty();
     }
-    // Main method to test
+    // Main method to testing
     public static void main(String[] args) {
     QueueUsingStack queue=new QueueUsingStack();
 
