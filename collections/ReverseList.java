@@ -25,3 +25,4 @@ public class ReverseList {
         System.out.println("Reversed LinkedList: " + reverse(linkedList));
     }
 }
++

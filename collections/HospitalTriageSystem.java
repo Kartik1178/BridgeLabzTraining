@@ -22,7 +22,6 @@ public class HospitalTriageSystem {
         PriorityQueue<Patient> pq = new PriorityQueue<>(
                 (a, b) -> b.severity - a.severity
         );
-
         pq.addAll(patients);
 
         while (!pq.isEmpty()) {
