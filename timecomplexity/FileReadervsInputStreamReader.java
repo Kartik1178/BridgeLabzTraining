@@ -20,7 +20,7 @@ public class FileReadingPerformanceComparison {
         while (isr.read() != -1) {}
         isr.close();
     }
-
+    //main method for testing
     public static void main(String[] args) throws Exception {
         String filePath = "largefile.txt"; // provide path
 

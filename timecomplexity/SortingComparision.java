@@ -59,7 +59,7 @@ public class SortingPerformanceComparison {
         int temp = arr[i + 1]; arr[i + 1] = arr[high]; arr[high] = temp;
         return i + 1;
     }
-    // main method
+    // main  method
     public static void main(String[] args) {
         int size = 10000;
         int[] arr1 = new Random().ints(size, 0, 100000).toArray();
