@@ -27,6 +27,8 @@ class ConsoleToFileWriter {
             System.out.println("Error: " + e.getMessage());
         }
     }
+    
+    //main method for testing
     public static void main(String[] args) {
         writeToFile("output.txt");
     }

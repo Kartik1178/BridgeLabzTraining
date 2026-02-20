@@ -31,6 +31,7 @@ class SearchIn2DMatrix {
 
         return false;
     }
+    //main method for testing
     public static void main(String[] args) {
         int[][] matrix = {
                 {1, 3, 5},

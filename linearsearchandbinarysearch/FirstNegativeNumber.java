@@ -16,7 +16,7 @@ class FirstNegativeLinearSearch {
         }
         return -1;
     }
-    // main method for testing
+    // main method for  testing
     public static void main(String[] args) {
         int[] arr = {5, 8, 3, -2, 9};
         System.out.println("Index: " + findFirstNegative(arr));

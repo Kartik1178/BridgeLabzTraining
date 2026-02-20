@@ -22,7 +22,7 @@ class RemoveDuplicatesUsingStringBuilder {
 
         return sb.toString();
     }
-// main method for testing
+// main method for  testing
     public static void main(String[] args) {
         String input = "programming";
         System.out.println("Original: " + input);
